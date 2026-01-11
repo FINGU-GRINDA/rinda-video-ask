@@ -1,0 +1,463 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search...",
+    "searchPlaceholder": "Search... (Ctrl+K)",
+    "noResults": "No results found",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "create": "Create",
+    "add": "Add",
+    "remove": "Remove",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "retry": "Retry",
+    "learnMore": "Learn more",
+    "getStarted": "Get Started",
+    "free": "Free",
+    "new": "NEW",
+    "plan": "Plan"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "aiSetup": "AI Smart Setup",
+    "videos": "Videos",
+    "leads": "Lead Inbox",
+    "designer": "Widget Designer",
+    "knowledge": "Knowledge Base",
+    "analytics": "Analytics",
+    "team": "Team",
+    "settings": "Settings",
+    "help": "Help"
+  },
+  "header": {
+    "newVideo": "Record New Video",
+    "notifications": "Notifications",
+    "profile": "My Profile",
+    "logout": "Log out"
+  },
+  "landing": {
+    "nav": {
+      "demo": "Try Demo",
+      "login": "Log in",
+      "startFree": "Start for Free"
+    },
+    "hero": {
+      "badge": "Revolutionize customer experience with AI video widgets",
+      "title": "Greet your website visitors",
+      "titleHighlight": "personally",
+      "subtitle1": "Welcome visitors with a warm video greeting from you.",
+      "subtitle2": "When customers respond via video, AI handles responses 24/7.",
+      "cta": "Get Started Now",
+      "demo": "Try Live Demo",
+      "trust1": "5-min setup",
+      "trust2": "Free to start",
+      "trust3": "24/7 AI support"
+    },
+    "features": {
+      "title": "Start video marketing",
+      "titleHighlight": "in 3 steps",
+      "step1": {
+        "title": "Record Video",
+        "description": "Record a welcoming video with your warm greeting. No professional equipment needed—your smartphone is enough."
+      },
+      "step2": {
+        "title": "Install Widget",
+        "description": "Add the video widget to your website with just one line of code. It takes only 5 minutes."
+      },
+      "step3": {
+        "title": "AI Auto-Response",
+        "description": "When visitors respond via video, AI automatically analyzes and responds. Never miss a customer, 24/7."
+      }
+    },
+    "benefits": {
+      "title": "3x higher",
+      "titleHighlight": "conversion rate",
+      "description": "Deliver your authenticity through video—something text chat or forms can't convey. Visitors stay longer and inquire more.",
+      "stat": "Average conversion increase",
+      "statValue": "3x"
+    },
+    "cta": {
+      "title": "Get started today",
+      "description": "Install in 5 minutes and start greeting your visitors today.",
+      "button": "Start for Free"
+    },
+    "footer": {
+      "company": "Rinda Ask",
+      "description": "Revolutionizing customer experience with AI interactive video widgets.",
+      "product": "Product",
+      "resources": "Resources",
+      "legal": "Legal",
+      "features": "Features",
+      "pricing": "Pricing",
+      "blog": "Blog",
+      "docs": "Documentation",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "copyright": "© 2024 Rinda Ask. All rights reserved."
+    }
+  },
+  "demo": {
+    "title": "Live Demo",
+    "subtitle": "Experience various industry scenarios",
+    "selectIndustry": "Select Industry",
+    "industries": {
+      "saas": "SaaS / IT Services",
+      "realestate": "Real Estate",
+      "education": "Education",
+      "ecommerce": "E-commerce",
+      "healthcare": "Healthcare",
+      "professional": "Professional Services",
+      "travel": "Travel"
+    },
+    "tryIt": "Try It",
+    "backToList": "Back to List"
+  },
+  "auth": {
+    "login": {
+      "title": "Log in",
+      "subtitle": "Sign in to your account",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Log in",
+      "forgotPassword": "Forgot password?",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "success": "Login successful!",
+      "error": "Login failed"
+    },
+    "signup": {
+      "title": "Sign up",
+      "subtitle": "Create a new account",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "company": "Company name",
+      "submit": "Sign up",
+      "hasAccount": "Already have an account?",
+      "login": "Log in",
+      "success": "Account created successfully!",
+      "error": "An error occurred during sign up"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome",
+    "stats": {
+      "totalViews": "Total Views",
+      "totalLeads": "Total Leads",
+      "conversionRate": "Conversion Rate",
+      "responseRate": "Response Rate"
+    },
+    "recentLeads": "Recent Leads",
+    "topVideos": "Top Videos",
+    "quickActions": "Quick Actions",
+    "viewAll": "View All"
+  },
+  "videos": {
+    "title": "Videos",
+    "subtitle": "Manage your recorded videos",
+    "newVideo": "Record New Video",
+    "empty": {
+      "title": "No videos yet",
+      "description": "Record your first welcome video",
+      "cta": "Record Video"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "processing": "Processing"
+    },
+    "views": "views",
+    "responses": "responses",
+    "duration": "duration"
+  },
+  "leads": {
+    "title": "Lead Inbox",
+    "subtitle": "Manage customer inquiries",
+    "empty": {
+      "title": "No leads yet",
+      "description": "Leads will appear here once the widget is installed"
+    },
+    "status": {
+      "new": "New",
+      "contacted": "Contacted",
+      "qualified": "Qualified",
+      "converted": "Converted",
+      "archived": "Archived"
+    },
+    "filters": {
+      "all": "All",
+      "unread": "Unread",
+      "starred": "Starred"
+    },
+    "assignTo": "Assign to",
+    "aiAnalysis": "AI Analysis"
+  },
+  "designer": {
+    "title": "Widget Designer",
+    "subtitle": "Customize widget appearance and behavior",
+    "tabs": {
+      "appearance": "Appearance",
+      "behavior": "Behavior",
+      "embed": "Embed Code"
+    },
+    "appearance": {
+      "primaryColor": "Primary Color",
+      "position": "Position",
+      "size": "Size",
+      "borderRadius": "Border Radius"
+    },
+    "behavior": {
+      "autoPlay": "Auto Play",
+      "showOnScroll": "Show on Scroll",
+      "delay": "Delay"
+    },
+    "preview": "Preview",
+    "desktop": "Desktop",
+    "mobile": "Mobile"
+  },
+  "knowledge": {
+    "title": "Knowledge Base",
+    "subtitle": "Manage information for AI reference",
+    "add": "Add Knowledge",
+    "empty": {
+      "title": "No knowledge yet",
+      "description": "Add information for AI to reference"
+    },
+    "sources": {
+      "all": "All",
+      "text": "Text",
+      "url": "URL",
+      "pdf": "PDF",
+      "faq": "FAQ"
+    }
+  },
+  "analytics": {
+    "title": "Analytics",
+    "subtitle": "Analyze performance and gain insights",
+    "dateRange": {
+      "7days": "Last 7 days",
+      "30days": "Last 30 days",
+      "90days": "Last 90 days",
+      "custom": "Custom"
+    },
+    "overview": "Overview",
+    "videoPerformance": "Video Performance",
+    "leadConversion": "Lead Conversion",
+    "widgetTriggers": "Widget Triggers",
+    "metrics": {
+      "totalViews": "Total Views",
+      "uniqueVisitors": "Unique Visitors",
+      "avgWatchTime": "Avg. Watch Time",
+      "completionRate": "Completion Rate",
+      "responseRate": "Response Rate",
+      "conversionRate": "Conversion Rate",
+      "totalLeads": "Total Leads",
+      "qualifiedLeads": "Qualified Leads",
+      "convertedLeads": "Converted Leads"
+    },
+    "charts": {
+      "viewsTrend": "Views Trend",
+      "conversionFunnel": "Conversion Funnel",
+      "topVideos": "Top Videos",
+      "leadsByStatus": "Leads by Status",
+      "triggerPerformance": "Trigger Performance"
+    },
+    "export": "Export",
+    "noData": "No data for selected period"
+  },
+  "team": {
+    "title": "Team",
+    "subtitle": "Manage team members and roles",
+    "invite": "Invite Member",
+    "members": "Members",
+    "pendingInvites": "Pending Invitations",
+    "empty": {
+      "title": "No team members",
+      "description": "Invite team members to collaborate"
+    },
+    "roles": {
+      "owner": "Owner",
+      "admin": "Admin",
+      "member": "Member"
+    },
+    "inviteModal": {
+      "title": "Invite Team Member",
+      "email": "Email address",
+      "emailPlaceholder": "name@company.com",
+      "role": "Select role",
+      "send": "Send Invitation",
+      "success": "Invitation sent",
+      "error": "Failed to send invitation"
+    },
+    "actions": {
+      "changeRole": "Change Role",
+      "remove": "Remove from Team",
+      "resendInvite": "Resend Invitation",
+      "cancelInvite": "Cancel Invitation"
+    },
+    "confirmRemove": "Are you sure you want to remove this member?",
+    "joined": "Joined"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage account and organization settings",
+    "tabs": {
+      "account": "Account",
+      "organization": "Organization",
+      "notifications": "Notifications",
+      "api": "API",
+      "embed": "Widget Embed"
+    },
+    "account": {
+      "title": "Account Settings",
+      "profile": "Profile",
+      "name": "Name",
+      "email": "Email",
+      "avatar": "Profile Picture",
+      "changeAvatar": "Change Picture",
+      "password": "Password",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm Password",
+      "changePassword": "Change Password",
+      "dangerZone": "Danger Zone",
+      "deleteAccount": "Delete Account",
+      "deleteAccountDesc": "Deleting your account will permanently remove all your data.",
+      "saved": "Settings saved"
+    },
+    "organization": {
+      "title": "Organization Settings",
+      "name": "Organization Name",
+      "logo": "Logo",
+      "changeLogo": "Change Logo",
+      "timezone": "Timezone",
+      "language": "Default Language",
+      "billing": "Billing",
+      "plan": "Current Plan",
+      "upgrade": "Upgrade"
+    },
+    "notifications": {
+      "title": "Notification Settings",
+      "email": "Email Notifications",
+      "emailDesc": "Receive important updates via email",
+      "newLead": "New Lead Alerts",
+      "newLeadDesc": "Get notified when new leads come in",
+      "dailyDigest": "Daily Digest",
+      "dailyDigestDesc": "Receive daily performance summary",
+      "weeklyReport": "Weekly Report",
+      "weeklyReportDesc": "Receive detailed weekly analytics report"
+    },
+    "api": {
+      "title": "API Key Management",
+      "description": "Use API keys to integrate with external services",
+      "createKey": "Create New Key",
+      "keyName": "Key Name",
+      "created": "Created",
+      "lastUsed": "Last Used",
+      "revoke": "Revoke",
+      "confirmRevoke": "Are you sure you want to revoke this API key?",
+      "empty": {
+        "title": "No API keys",
+        "description": "Create an API key to start integrating"
+      },
+      "newKeyModal": {
+        "title": "Create New API Key",
+        "name": "Key Name",
+        "namePlaceholder": "e.g., Production Server",
+        "create": "Create Key",
+        "warning": "This key will not be shown again. Store it in a safe place."
+      }
+    },
+    "embed": {
+      "title": "Widget Embed Code",
+      "subtitle": "Install the widget on your website",
+      "projectId": "Project ID",
+      "platforms": {
+        "html": "HTML",
+        "react": "React",
+        "nextjs": "Next.js",
+        "wordpress": "WordPress"
+      },
+      "copyCode": "Copy Code",
+      "preview": "Preview",
+      "testWidget": "Test Widget"
+    }
+  },
+  "help": {
+    "title": "Help",
+    "subtitle": "How can we help you?",
+    "searchPlaceholder": "Search help...",
+    "categories": {
+      "gettingStarted": {
+        "title": "Getting Started",
+        "description": "Learn the basics of Rinda Ask"
+      },
+      "videoRecording": {
+        "title": "Video Recording",
+        "description": "How to record effective welcome videos"
+      },
+      "widgetSetup": {
+        "title": "Widget Setup",
+        "description": "Widget installation and customization"
+      },
+      "aiFeatures": {
+        "title": "AI Features",
+        "description": "AI auto-response and analysis features"
+      },
+      "integrations": {
+        "title": "Integrations",
+        "description": "How to integrate with external services"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "How do I install the widget?",
+      "a1": "Go to Settings > Widget Embed, copy the code, and paste it into your website.",
+      "q2": "How many videos can I register?",
+      "a2": "It depends on your plan. Free plan allows 3, Pro plan allows unlimited.",
+      "q3": "How does AI respond?",
+      "a3": "AI responds naturally based on the information registered in the Knowledge Base."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Can't find what you're looking for? Contact us directly.",
+      "email": "Email Support",
+      "chat": "Live Chat",
+      "phone": "Phone Support"
+    },
+    "article": {
+      "backToHelp": "Back to Help",
+      "helpful": "Was this article helpful?",
+      "yes": "Yes",
+      "no": "No",
+      "relatedArticles": "Related Articles"
+    }
+  },
+  "errors": {
+    "generic": "An error occurred",
+    "notFound": "Page not found",
+    "unauthorized": "Please log in",
+    "forbidden": "Access denied",
+    "networkError": "Network error occurred",
+    "tryAgain": "Please try again"
+  },
+  "empty": {
+    "default": {
+      "title": "No data",
+      "description": "Nothing to display yet"
+    }
+  }
+}
