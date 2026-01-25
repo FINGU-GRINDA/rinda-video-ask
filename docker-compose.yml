@@ -12,7 +12,7 @@ services:
   studio:
     build:
       context: .
-      dockerfile: apps/studio/Dockerfile
+      dockerfile: Dockerfile
       args:
         - NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL}
         - NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}
