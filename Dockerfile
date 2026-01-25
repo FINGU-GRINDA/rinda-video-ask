@@ -79,7 +79,7 @@ ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 
 # Copy necessary files from builder
-COPY --from=builder /app/apps/studio/public ./public
+COPY --from=builder /app/apps/studio/public ./apps/studio/public
 COPY --from=builder --chown=nextjs:nodejs /app/apps/studio/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/apps/studio/.next/static ./apps/studio/.next/static
 
@@ -94,4 +94,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
   CMD wget --no-verbose --tries=1 --spider http://localhost:3000/api/health || exit 1
 
 # Start the application
-CMD ["node", "apps/studio/server.js"]
+CMD ["node", "server.js"]
