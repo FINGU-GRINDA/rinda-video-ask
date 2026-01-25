@@ -3,9 +3,12 @@ import { createWidgetStyles } from './styles'
 import { WidgetUI } from './ui'
 import { MediaHandler } from './media'
 
+// API URL injected at build time via Vite define
+declare const __API_URL__: string
+
 const DEFAULT_CONFIG: WidgetConfig = {
   projectId: '',
-  apiUrl: 'https://api.rindaask.com',
+  apiUrl: typeof __API_URL__ !== 'undefined' ? __API_URL__ : 'https://api.rindaask.com',
   position: 'bottom-right',
   theme: 'light',
   primaryColor: '#6366f1',

@@ -10,6 +10,7 @@
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
+    "terser": "^5.46.0",
     "typescript": "^5.7.2",
     "vite": "^6.0.5"
   }

@@ -1,10 +1,9 @@
 -- Enable necessary extensions
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE EXTENSION IF NOT EXISTS "vector";
 
 -- Organizations table
 CREATE TABLE organizations (
-  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   name VARCHAR(255) NOT NULL,
   slug VARCHAR(100) UNIQUE NOT NULL,
   logo_url TEXT,
@@ -36,7 +35,7 @@ CREATE TABLE organizations (
 
 -- Organization members
 CREATE TABLE organization_members (
-  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   organization_id UUID NOT NULL REFERENCES organizations(id) ON DELETE CASCADE,
   user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
   role VARCHAR(20) DEFAULT 'member' CHECK (role IN ('owner', 'admin', 'member')),
@@ -46,7 +45,7 @@ CREATE TABLE organization_members (
 
 -- Projects
 CREATE TABLE projects (
-  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   organization_id UUID NOT NULL REFERENCES organizations(id) ON DELETE CASCADE,
   name VARCHAR(255) NOT NULL,
   domain TEXT,
@@ -82,7 +81,7 @@ CREATE TABLE projects (
 
 -- Video messages
 CREATE TABLE video_messages (
-  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   project_id UUID NOT NULL REFERENCES projects(id) ON DELETE CASCADE,
   title VARCHAR(255) NOT NULL,
   description TEXT,
@@ -104,7 +103,7 @@ CREATE TABLE video_messages (
 
 -- Leads
 CREATE TABLE leads (
-  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   project_id UUID NOT NULL REFERENCES projects(id) ON DELETE CASCADE,
   video_message_id UUID REFERENCES video_messages(id) ON DELETE SET NULL,
   visitor_id VARCHAR(100) NOT NULL,
@@ -145,7 +144,7 @@ CREATE TABLE leads (
 
 -- Knowledge base with vector embeddings
 CREATE TABLE knowledge_base (
-  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   project_id UUID NOT NULL REFERENCES projects(id) ON DELETE CASCADE,
   title VARCHAR(255) NOT NULL,
   content TEXT NOT NULL,
@@ -160,7 +159,7 @@ CREATE TABLE knowledge_base (
 
 -- AI conversations log
 CREATE TABLE ai_conversations (
-  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   lead_id UUID NOT NULL REFERENCES leads(id) ON DELETE CASCADE,
   project_id UUID NOT NULL REFERENCES projects(id) ON DELETE CASCADE,
   messages JSONB DEFAULT '[]',
@@ -172,7 +171,7 @@ CREATE TABLE ai_conversations (
 
 -- Analytics events
 CREATE TABLE analytics_events (
-  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   project_id UUID NOT NULL REFERENCES projects(id) ON DELETE CASCADE,
   video_message_id UUID REFERENCES video_messages(id) ON DELETE SET NULL,
   visitor_id VARCHAR(100) NOT NULL,

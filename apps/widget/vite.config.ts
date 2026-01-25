@@ -24,5 +24,6 @@ export default defineConfig({
   },
   define: {
     'process.env.NODE_ENV': JSON.stringify('production'),
+    '__API_URL__': JSON.stringify(process.env.VITE_API_URL || 'https://api.rindaask.com'),
   },
 })
