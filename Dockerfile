@@ -78,9 +78,9 @@ ENV NEXT_TELEMETRY_DISABLED=1
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 
-# Copy necessary files from builder
-COPY --from=builder /app/apps/studio/public ./apps/studio/public
+# Copy necessary files from builder (ORDER MATTERS - standalone first, then public/static on top)
 COPY --from=builder --chown=nextjs:nodejs /app/apps/studio/.next/standalone ./
+COPY --from=builder /app/apps/studio/public ./apps/studio/public
 COPY --from=builder --chown=nextjs:nodejs /app/apps/studio/.next/static ./apps/studio/.next/static
 
 # Switch to non-root user
